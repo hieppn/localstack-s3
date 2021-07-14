@@ -1,0 +1,10 @@
+com\example\springboot\config\S3ClientConfiguration.class
+com\example\springboot\controller\FileDownloadController.class
+com\example\springboot\Application.class
+com\example\springboot\config\MapperConfiguration.class
+com\example\springboot\model\DownloadedResource$DownloadedResourceBuilder.class
+com\example\springboot\model\DownloadedResource.class
+com\example\springboot\service\S3StorageService.class
+com\example\springboot\service\StorageService.class
+com\example\springboot\controller\FileUploadController.class
+com\example\springboot\HelloController.class

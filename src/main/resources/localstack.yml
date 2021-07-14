@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  localstack:
+    image: localstack/localstack
+    network_mode: bridge
+    ports:
+      - "4566:4566"
+      - "8088:8088"
+    environment:
+      - SERVICES=s3
+      - PORT_WEB_UI=8088
+      - DEFAULT_REGION=us-east-1
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+    volumes:
+      - "~/tmp/localstack:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
